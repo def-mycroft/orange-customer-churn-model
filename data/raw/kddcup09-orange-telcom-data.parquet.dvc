@@ -1,0 +1,5 @@
+outs:
+- md5: 661da895766f7553ec55e3898cff7237
+  size: 265807880
+  hash: md5
+  path: kddcup09-orange-telcom-data.parquet
