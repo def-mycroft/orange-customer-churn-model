@@ -1,4 +1,5 @@
 # Mac OS-specific storage files
+activate.sh
 .DS_Store
 
 # vim
