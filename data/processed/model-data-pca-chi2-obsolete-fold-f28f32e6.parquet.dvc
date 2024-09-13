@@ -1,0 +1,5 @@
+outs:
+- md5: 87d05fec3c40781b44b03095c14c3c04
+  size: 355052392
+  hash: md5
+  path: model-data-pca-chi2-obsolete-fold-f28f32e6.parquet

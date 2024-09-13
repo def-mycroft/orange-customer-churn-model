@@ -2,3 +2,5 @@
     remote = origin
 ['remote "origin"']
     url = /l/gr/protective-location.dvc/
+['remote "sixpack"']
+    url = /l/six-pack/protective-location.dvc
