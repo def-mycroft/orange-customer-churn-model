@@ -2,9 +2,24 @@
 
 from .imports import * 
 from IPython.display import Markdown, display
+from matplotlib import pyplot as plt
 from scipy.stats import mannwhitneyu as mwtest
 from scipy.stats import t 
+from sklearn.metrics import classification_report as sklearn_cr
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import inspect
+
+
+def classification_report(y_pred, y_test):
+    matrix = confusion_matrix(y_test, y_pred)
+    plot = ConfusionMatrixDisplay(matrix).plot()
+    plt.close()
+    data = dict(
+        report=sklearn_cr(y_test, y_pred),
+        plot=plot,
+        matrix=matrix,
+    )
+    return data
 
 
 def mw_test(df, col, p_threshold=0.05):
